@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 295848455589082591}
   - component: {fileID: 6208922084626179640}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 4518038817950101891}
   - component: {fileID: 2286323117887354178}
   - component: {fileID: 8027237787270184436}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 2203954159465036175}
   - component: {fileID: 2213472318565254151}
   - component: {fileID: 6731682576086885928}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TurretChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 8515137627947842701}
   - component: {fileID: 8232065995439728176}
   - component: {fileID: 8720845946450407511}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8660587489763263530}
   - component: {fileID: 7137454463434503384}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

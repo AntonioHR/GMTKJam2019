@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace GMTKJ.StateMachines
 {
@@ -10,14 +11,22 @@ namespace GMTKJ.StateMachines
         public TContext Context { get; private set; }
         public abstract TState DefaultState { get; }
 
-        public void Init(TContext Context)
+        public void Init(TContext context)
         {
-            CurrentState = DefaultState;
+            this.Context =context;
+            ChangeState(DefaultState);
         }
 
         void IStateMachine<TContext, TState>.ChangeState(TState nextState)
         {
-            ((IState<TContext, TState>)CurrentState).End();
+            ChangeState(nextState);
+        }
+
+        private void ChangeState(TState nextState)
+        {
+            Debug.Assert(nextState != null);
+            if(CurrentState != null)
+                ((IState<TContext, TState>)CurrentState).End();
             CurrentState = nextState;
             ((IState<TContext, TState>)CurrentState).Init(this);
             ((IState<TContext, TState>)nextState).OnEnter();
