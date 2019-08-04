@@ -10,12 +10,12 @@ namespace GMTKJ.TowerDefense.PlayerStates
         public override void Update()
         {
             Context.mover.Update();
-                if(PressedTurretToggle)
+            if(PressedTurretToggle)
+            {
+                if(Context.turretChecker.Current != null)
                 {
-                    if(Context.turretChecker.Current != null)
-                    {
-                        StartManning(Context.turretChecker.Current);
-                    }
+                    StartManning(Context.turretChecker.Current);
+                }
             }
         }
 
