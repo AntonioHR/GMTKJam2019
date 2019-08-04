@@ -92,7 +92,7 @@ Material:
     - _Worldspace_Gradient_Scale: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.12941177, g: 0.20000002, b: 0.30588236, a: 1}
+    - _BaseColor: {r: 0.36078432, g: 0.6117647, b: 0.41520447, a: 1}
     - _Base_Color: {r: 0.6767233, g: 0.67301536, b: 0.7169812, a: 0}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
