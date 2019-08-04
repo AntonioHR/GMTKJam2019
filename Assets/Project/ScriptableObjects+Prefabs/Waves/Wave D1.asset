@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75cbfe4abf709494e90aa05510ec8066, type: 3}
   m_Name: Wave D1
   m_EditorClassIdentifier: 
+  initialDelay: 30
   timeBewteenSections: 10
   waveSections:
   - {fileID: 11400000, guid: bf315e32601a88e419af01ea3a4be7c9, type: 2}
