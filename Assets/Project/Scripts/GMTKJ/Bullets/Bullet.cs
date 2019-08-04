@@ -1,8 +1,9 @@
+using AntonioHR.Interactables;
 using UnityEngine;
 
 namespace GMTKJ.Bullets
 {
-    public class Bullet : MonoBehaviour
+    public class Bullet : ObjectTrigger<Enemy>
     {
         public float vel = 5;
         [SerializeField]
@@ -11,7 +12,11 @@ namespace GMTKJ.Bullets
         public void Shoot(Vector3 direction)
         {
             rb.velocity = direction.normalized * vel;
-            Debug.Log(rb.velocity);
+        }
+
+        protected override void OnTriggered(Enemy enemy)
+        {
+            enemy.OnHitBy(this);
         }
     }
 }
