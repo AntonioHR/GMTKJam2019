@@ -1,11 +1,20 @@
 using System;
 using GMTKJ.StateMachines;
+using UnityEngine;
 
 namespace GMTKJ.TowerDefense
 {
     public abstract class PlayerState : State<Player, PlayerState>
     {
         public virtual bool AllowTurretTargets{get=>false;}
+        public bool PressedTurretToggle
+        {
+            get
+            {
+                return Input.GetKeyDown(KeyCode.Space);
+            }
+            
+        }
         public virtual void Update(){}
 
         public virtual void OnClosestTurretChanged(Turret from, Turret to)

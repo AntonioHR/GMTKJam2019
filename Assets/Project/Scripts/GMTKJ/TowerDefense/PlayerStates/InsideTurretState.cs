@@ -16,8 +16,9 @@ namespace GMTKJ.TowerDefense.PlayerStates
         }
         public override void Update()
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(PressedTurretToggle)
             {
+                turret.IsManned = false;
                 ChangeState(new LeavingTurretState(turret));
             }
         }

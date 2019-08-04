@@ -38,14 +38,6 @@ namespace GMTKJ.TowerDefense
             stateMachine.Update();
         }
 
-        public void OnLeftTurret(Turret turret)
-        {
-        }
-
-        private void StartManning(Turret current)
-        {
-        }
-
         public void OnClosestTurretChanged(Turret from, Turret to)
         {
             stateMachine.OnClosestTurretChanged(from, to);
