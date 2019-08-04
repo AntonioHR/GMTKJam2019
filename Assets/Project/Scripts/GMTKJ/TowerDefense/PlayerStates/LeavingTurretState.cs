@@ -13,7 +13,9 @@ namespace GMTKJ.TowerDefense.PlayerStates
         }
         protected override void Begin()
         {
-            Context.turretChecker.Current.OnSelect();
+            if(Context.turretChecker.Current != null)
+                Context.turretChecker.Current.OnSelect();
+            turret.IsManned = false;
             Context.body.Reset(OnLeftTurret);
         }
 
