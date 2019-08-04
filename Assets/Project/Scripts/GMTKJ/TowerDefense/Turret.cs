@@ -10,6 +10,8 @@ namespace GMTKJ.TowerDefense
     public class Turret : MonoBehaviour, IHittable
     {
         [SerializeField]
+        private GlowIndicactor glow;
+        [SerializeField]
         private Bullet bulletPrefab;
         [SerializeField]
         private float fireDelay;
@@ -50,6 +52,7 @@ namespace GMTKJ.TowerDefense
             shooter = new Shooter(bulletPrefab, shootingSpot, IngameScene.Current.BulletsFolder);
             bar.max = maxChargeShots;
             StartCoroutine(AutoFire(fireDelay));
+            glow.SetTo(0);
         }
 
         private IEnumerator AutoFire(float fireDelay)
@@ -95,6 +98,7 @@ namespace GMTKJ.TowerDefense
         private void UpdateShotsBar()
         {
             bar.OnUpdate(chargeShots);
+            glow.SetTo((float)chargeShots/(float)maxChargeShots);
         }
     }
 }
