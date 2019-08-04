@@ -6,5 +6,16 @@ using UnityEngine;
 
 public class Wave : ScriptableObject
 {
+    public float timeBewteenSections = 5f;
     public ScriptableObject[] waveSections;
+    
+    public float TotalTime()
+    {
+        float totalTime = 0f;
+        foreach (WaveSection ws in waveSections)
+        {
+            totalTime += ws.TotalTime;
+        }
+        return totalTime + timeBewteenSections;
+    }
 }

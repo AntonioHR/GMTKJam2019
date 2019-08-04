@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GMTKJ.Ai
 {
@@ -12,12 +13,18 @@ namespace GMTKJ.Ai
         private Transform target;
         [SerializeField]
         private ScriptableObject[] waves;
+        [SerializeField]
+        private float timeBetweenWaves = 10f;
+        [SerializeField]
+        private Text currentWaveText;
 
-        void Start()
+        IEnumerator Start()
         {
-            foreach(ScriptableObject w in waves)
+            foreach(Wave w in waves)
             {
                 StartCoroutine(NewWave(w as Wave));
+                currentWaveText.text = w.name;
+                yield return new WaitForSeconds(w.TotalTime());
             }
         }
 
@@ -26,9 +33,9 @@ namespace GMTKJ.Ai
             foreach (WaveSection ws in wave.waveSections)
             {
                 StartCoroutine(NewSection(ws));
-                yield return new WaitForSeconds(ws.Size * ws.timeToSpawn + 3f);
+                float sectionTotalTime = ws.Size * ws.timeBewteenEnemies + wave.timeBewteenSections;
+                yield return new WaitForSeconds(sectionTotalTime);
             }
-            yield return new WaitForSeconds(30f);
         }
 
         IEnumerator NewSection(WaveSection waveSection)
@@ -36,7 +43,7 @@ namespace GMTKJ.Ai
             foreach (GameObject g in waveSection.enemyPrefabs)
             {
                 AddEnemy(g);
-                yield return new WaitForSeconds(waveSection.timeToSpawn);
+                yield return new WaitForSeconds(waveSection.timeBewteenEnemies);
             }   
         }
         
