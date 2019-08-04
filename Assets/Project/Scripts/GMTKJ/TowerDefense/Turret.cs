@@ -9,7 +9,7 @@ namespace GMTKJ.TowerDefense
     {
         [SerializeField]
         private Bullet bulletPrefab;
-
+        private TwoPointMover mover;
         private RotateByMouse rot;
         private Shooter shooter;
         [SerializeField]
@@ -18,11 +18,14 @@ namespace GMTKJ.TowerDefense
         private Transform shootingSpot;
         [SerializeField]
         private Transform selectIndicator;
+        [SerializeField]
+        private TwoPointMover.Setup setup;
 
         public bool IsManned{get; set;}
 
         public void Start()
         {
+            mover = new TwoPointMover(transform, setup);
             rot = new RotateByMouse(IngameScene.Current.Cursor, transform, rotationSettings);
             shooter = new Shooter(bulletPrefab, shootingSpot, IngameScene.Current.BulletsFolder);
         }
@@ -31,17 +34,12 @@ namespace GMTKJ.TowerDefense
         {
             if(IsManned)
             {
-
                 rot.Update();
+                mover.Update();
+
                 if(Input.GetMouseButtonDown(0))
                 {
                     shooter.Fire(transform.forward);
-                }
-
-                if(Input.GetKeyDown(KeyCode.Space))
-                {
-                    IsManned = false;
-                    IngameScene.Current.Player.OnLeftTurret(this);
                 }
             }
         }
