@@ -18,6 +18,10 @@ namespace GMTKJ.TowerDefense
         private MoveByController.Setup moveSetup;
         [SerializeField]
         private TurretChecker turretChecker;
+        [SerializeField]
+        private PlayerBody body;
+
+        private bool isManning = false;
 
 
         void Awake()
@@ -31,15 +35,33 @@ namespace GMTKJ.TowerDefense
 
         void Update()
         {
-            mover.Update();
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(!isManning)
             {
-                if(turretChecker.Current != null)
+                mover.Update();
+                if(Input.GetKeyDown(KeyCode.Space))
                 {
-                    turretChecker.Current.IsManned = true;
-                    gameObject.SetActive(false);
+                    if(turretChecker.Current != null)
+                    {
+                        StartManning(turretChecker.Current);
+                    }
                 }
             }
+        }
+
+        public void OnLeftTurret(Turret turret)
+        {
+            isManning = false;
+            body.Reset();
+            turret.OnSelect();
+        }
+
+        private void StartManning(Turret current)
+        {
+            current.OnDeselect();
+            current.IsManned = true;
+            isManning = true;
+
+            body.MoveInto(current);
         }
 
         public void OnClosestTurretChanged(Turret from, Turret to)

@@ -1,0 +1,38 @@
+using System;
+using DG.Tweening;
+using DG.Tweening.Core;
+using DG.Tweening.Plugins.Options;
+using UnityEngine;
+
+namespace GMTKJ.TowerDefense
+{
+    public class PlayerBody : MonoBehaviour
+    {
+        private Vector3 basePos;
+        private TweenerCore<Vector3, Vector3, VectorOptions> floatTween;
+
+        public void Start()
+        {
+            basePos = transform.localPosition;
+            StartFloatTween();
+        }
+
+        private void StartFloatTween()
+        {
+            floatTween = transform.DOLocalMove(basePos + Vector3.up * 1, .5f).SetLoops(-1, LoopType.Yoyo);
+        }
+
+        public void MoveInto(Turret current)
+        {
+            floatTween.Kill();
+            transform.DOMove(current.transform.position, .5f);
+            transform.DOScale(Vector3.zero, .5f);
+        }
+        public void Reset()
+        {
+            transform.DOLocalMove(basePos, .5f);
+            transform.DOScale(Vector3.one, .5f);
+            StartFloatTween();
+        }
+    }
+}

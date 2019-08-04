@@ -40,8 +40,8 @@ namespace GMTKJ.TowerDefense
 
                 if(Input.GetKeyDown(KeyCode.Space))
                 {
-                    IngameScene.Current.Player.gameObject.SetActive(true);
                     IsManned = false;
+                    IngameScene.Current.Player.OnLeftTurret(this);
                 }
             }
         }
