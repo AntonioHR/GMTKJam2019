@@ -12,7 +12,12 @@ namespace GMTKJ.TowerDefense.PlayerStates
         }
         protected override void Begin()
         {
+            Context.body.gameObject.SetActive(false);
             turret.IsManned = true;
+        }
+        protected override void End()
+        {
+            Context.body.gameObject.SetActive(true);
         }
         public override void Update()
         {

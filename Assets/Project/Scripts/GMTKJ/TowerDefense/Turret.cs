@@ -16,6 +16,7 @@ namespace GMTKJ.TowerDefense
         [SerializeField]
         private float fireDelay;
         private TwoPointMover mover;
+        private MoveByController move;
         private RotateByMouse rot;
         private Shooter shooter;
         [SerializeField]
@@ -26,6 +27,8 @@ namespace GMTKJ.TowerDefense
         private Transform selectIndicator;
         [SerializeField]
         private TwoPointMover.Setup setup;
+        [SerializeField]
+        private MoveByController.Setup moveByControllerSetup;
         [SerializeField]
         private OnDemandHealthBar bar;
 
@@ -44,10 +47,13 @@ namespace GMTKJ.TowerDefense
         public int chargeShots;
         public int maxChargeShots = 5;
         private bool isManned;
+        [SerializeField]
+        private CharacterController charController;
 
         public void Start()
         {
             mover = new TwoPointMover(transform, setup);
+            move = new MoveByController(charController, moveByControllerSetup);
             rot = new RotateByMouse(IngameScene.Current.Cursor, transform, rotationSettings);
             shooter = new Shooter(bulletPrefab, shootingSpot, IngameScene.Current.BulletsFolder);
             bar.max = maxChargeShots;
@@ -75,7 +81,8 @@ namespace GMTKJ.TowerDefense
             if(IsManned)
             {
                 rot.Update();
-                mover.Update();
+                // mover.Update();
+                move.Update();
             }
         }
 
