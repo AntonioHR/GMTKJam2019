@@ -41,6 +41,7 @@ namespace GMTKJ.Ai
 
         IEnumerator NewWave(Wave wave)
         {
+            AudioManager.Instance.PlayFx("NewWave");
             foreach (WaveSection ws in wave.waveSections)
             {
                 StartCoroutine(NewSection(ws));

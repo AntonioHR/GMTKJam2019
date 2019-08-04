@@ -23,6 +23,7 @@ namespace GMTKJ.TowerDefense.PlayerStates
         {
             if(PressedTurretToggle)
             {
+                AudioManager.Instance.PlayFx("TowerExit");
                 turret.IsManned = false;
                 ExitTo(new LeavingTurretState(turret));
             }

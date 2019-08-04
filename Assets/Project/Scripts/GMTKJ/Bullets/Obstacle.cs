@@ -6,6 +6,7 @@ namespace GMTKJ.Bullets
     {
         public void OnHitBy(Bullet bullet)
         {
+            AudioManager.Instance.PlayFx("WallDamaged");
         }
     }
 }

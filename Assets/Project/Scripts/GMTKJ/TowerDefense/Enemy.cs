@@ -54,6 +54,7 @@ namespace GMTKJ.TowerDefense
                 ExitTo(new DyingState());
             else
             {
+                AudioManager.Instance.PlayFx("CristalDamage");
                 Context.transform.DOPunchPosition(bullet.Velocity.normalized * .25f, .2f, 0);
             }
         }

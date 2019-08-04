@@ -14,6 +14,7 @@ namespace GMTKJ.TowerDefense.PlayerStates
             {
                 if(Context.turretChecker.Current != null)
                 {
+                    AudioManager.Instance.PlayFx("TowerEnter");
                     StartManning(Context.turretChecker.Current);
                 }
             }

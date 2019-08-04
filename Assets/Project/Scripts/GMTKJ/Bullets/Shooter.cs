@@ -17,6 +17,7 @@ namespace GMTKJ.Bullets
 
         public void Fire(Vector3 direction, IHittable owner = null)
         {
+            AudioManager.Instance.PlayFx("TowerShoot");
             var bullet = GameObject.Instantiate(prefab, origin.position, Quaternion.LookRotation(direction), folder);
             bullet.Shoot(direction, owner);
         }

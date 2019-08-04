@@ -9,6 +9,8 @@ namespace GMTKJ.TowerDefense.EnemyStates
     {
         protected override void Begin()
         {
+            AudioManager.Instance.PlayFx("EnemyDamaged");
+
             var seq = DOTween.Sequence();
             seq.Append(Context.transform.DOScaleZ(0f, 0.5f));
             seq.Join(Context.transform.DOMove(Vector3.up *1.5f, .5f).SetRelative());
