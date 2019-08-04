@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using DG.Tweening;
 using GMTKJ.Bullets;
 using GMTKJ.Movement;
 using GMTKJ.Ui;
@@ -24,7 +25,7 @@ namespace GMTKJ.TowerDefense
         [SerializeField]
         private Transform shootingSpot;
         [SerializeField]
-        private Transform selectIndicator;
+        private CanvasGroup selectIndicator;
         [SerializeField]
         private TwoPointMover.Setup setup;
         [SerializeField]
@@ -88,12 +89,14 @@ namespace GMTKJ.TowerDefense
 
         public void OnDeselect()
         {
-            selectIndicator.gameObject.SetActive(false);
+            DOTween.Kill(selectIndicator);
+            selectIndicator.DOFade(0, .25f);
         }
 
         public void OnSelect()
         {
-            selectIndicator.gameObject.SetActive(true);
+            DOTween.Kill(selectIndicator);
+            selectIndicator.DOFade(1, .25f);
         }
 
         public void OnHitBy(Bullet bullet)

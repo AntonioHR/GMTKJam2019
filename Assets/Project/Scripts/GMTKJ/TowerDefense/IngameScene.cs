@@ -3,6 +3,7 @@ using DG.Tweening;
 using GMTKJ.Ai;
 using GMTKJ.Movement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace GMTKJ.TowerDefense
 { 
@@ -70,7 +71,13 @@ namespace GMTKJ.TowerDefense
         }
         public void OnNexusDead(Nexus nexus)
         {
-            gameOver.DOFade(1, 1);
+            var seq = DOTween.Sequence();
+            seq.Append(gameOver.DOFade(1, 1));
+            seq.AppendInterval(.5f);
+            seq.AppendCallback(()=>
+            {
+                SceneManager.LoadScene(0, LoadSceneMode.Single);
+            });
 
             player.OnNexusDead();
         }
