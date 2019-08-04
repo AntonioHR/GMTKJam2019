@@ -9,6 +9,9 @@ namespace GMTKJ.TowerDefense
         [SerializeField]
         private PlaneCursor cursor;
 
+        [SerializeField]
+        private Transform bulletsFolder;
+
         public PlaneCursor Cursor
         {
             get
@@ -16,6 +19,8 @@ namespace GMTKJ.TowerDefense
                 return cursor;
             }
         }
+
+        public Transform BulletsFolder { get => bulletsFolder;}
 
         public void Start()
         {

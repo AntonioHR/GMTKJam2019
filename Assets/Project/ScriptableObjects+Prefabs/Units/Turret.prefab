@@ -106,7 +106,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e792f82486fbd4f4cbba0db21be72385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 879876182279589199, guid: 8464b8db4ae11b44aba3d95c5123e00b,
+    type: 3}
+  rotationSettings:
+    lockVertical: 1
+  shootingSpot: {fileID: 8727361976252759496}
 --- !u!1001 &4352559392224335570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -127,7 +131,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 083568d363d700648bd7f94c7716e032,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.408
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 083568d363d700648bd7f94c7716e032,
         type: 3}
