@@ -285,6 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 879876182279589199, guid: 8464b8db4ae11b44aba3d95c5123e00b,
     type: 3}
+  fireDelay: 0.75
   rotationSettings:
     lockVertical: 1
   shootingSpot: {fileID: 8727361976252759496}

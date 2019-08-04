@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using GMTKJ.Bullets;
 using GMTKJ.Movement;
 using UnityEngine;
@@ -9,6 +10,8 @@ namespace GMTKJ.TowerDefense
     {
         [SerializeField]
         private Bullet bulletPrefab;
+        [SerializeField]
+        private float fireDelay;
         private TwoPointMover mover;
         private RotateByMouse rot;
         private Shooter shooter;
@@ -28,6 +31,16 @@ namespace GMTKJ.TowerDefense
             mover = new TwoPointMover(transform, setup);
             rot = new RotateByMouse(IngameScene.Current.Cursor, transform, rotationSettings);
             shooter = new Shooter(bulletPrefab, shootingSpot, IngameScene.Current.BulletsFolder);
+            StartCoroutine(AutoFire(fireDelay));
+        }
+
+        private IEnumerator AutoFire(float fireDelay)
+        {
+            while(true)
+            {
+                yield return new WaitForSeconds(fireDelay);
+                shooter.Fire(transform.forward);
+            }
         }
 
         public void Update()
@@ -36,11 +49,6 @@ namespace GMTKJ.TowerDefense
             {
                 rot.Update();
                 mover.Update();
-
-                if(Input.GetMouseButtonDown(0))
-                {
-                    shooter.Fire(transform.forward);
-                }
             }
         }
 
