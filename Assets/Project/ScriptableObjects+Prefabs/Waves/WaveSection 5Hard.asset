@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9a3deb887370ee4a8d4cb001b2bd579, type: 3}
   m_Name: WaveSection 5Hard
   m_EditorClassIdentifier: 
-  timeBewteenEnemies: 1
+  timeBewteenEnemies: 3
   enemyPrefabs:
   - {fileID: 5353038227448624709, guid: 8385b4d6ba9c3984d9fe1be4189f2e24, type: 3}
   - {fileID: 5353038227448624709, guid: 8385b4d6ba9c3984d9fe1be4189f2e24, type: 3}
