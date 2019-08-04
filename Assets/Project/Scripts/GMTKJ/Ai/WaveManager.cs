@@ -8,8 +8,6 @@ namespace GMTKJ.Ai
     public class WaveManager : MonoBehaviour
     {
         [SerializeField]
-        private Transform target;
-        [SerializeField]
         private ScriptableObject[] waves;
         [SerializeField]
         private float timeBetweenWaves = 10f;
@@ -48,7 +46,6 @@ namespace GMTKJ.Ai
         void AddEnemy(GameObject prefab)
         {
             GameObject e = Instantiate(prefab, this.transform);
-            e.GetComponent<GoToTarget>().SetTarget(target);
         }
     }
 }

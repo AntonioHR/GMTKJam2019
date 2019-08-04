@@ -38,6 +38,11 @@ namespace GMTKJ.TowerDefense
             stateMachine.Update();
         }
 
+        public void OnNexusDead()
+        {
+            stateMachine.OnNexusDead();
+        }
+
         public void OnClosestTurretChanged(Turret from, Turret to)
         {
             stateMachine.OnClosestTurretChanged(from, to);

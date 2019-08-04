@@ -19,5 +19,10 @@ namespace GMTKJ.TowerDefense
         {
             CurrentState.OnClosestTurretChanged(from, to);
         }
+
+        public void OnNexusDead()
+        {
+            CurrentState.OnNexusDead();
+        }
     }
 }

@@ -1,4 +1,5 @@
 using AntonioHR.Interactables;
+using GMTKJ.TowerDefense;
 using UnityEngine;
 
 namespace GMTKJ.Bullets
@@ -8,6 +9,9 @@ namespace GMTKJ.Bullets
         public float vel = 5;
         [SerializeField]
         private Rigidbody rb;
+        private int damage = 1;
+
+        public int Damage { get{return damage;}}
 
         public void Shoot(Vector3 direction)
         {

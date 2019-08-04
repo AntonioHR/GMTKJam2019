@@ -1,5 +1,6 @@
 using System;
 using GMTKJ.StateMachines;
+using GMTKJ.TowerDefense.PlayerStates;
 using UnityEngine;
 
 namespace GMTKJ.TowerDefense
@@ -26,6 +27,11 @@ namespace GMTKJ.TowerDefense
                 if(to != null)
                     to.OnSelect();
             }
+        }
+
+        public virtual void OnNexusDead()
+        {
+            ChangeState(new DeadState());
         }
     }
 }
