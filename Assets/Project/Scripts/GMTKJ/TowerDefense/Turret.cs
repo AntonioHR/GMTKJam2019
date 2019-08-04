@@ -1,3 +1,4 @@
+using System;
 using GMTKJ.Bullets;
 using GMTKJ.Movement;
 using UnityEngine;
@@ -15,8 +16,10 @@ namespace GMTKJ.TowerDefense
         private RotateByMouse.Settings rotationSettings;
         [SerializeField]
         private Transform shootingSpot;
+        [SerializeField]
+        private Transform selectIndicator;
 
-        public bool IsManned{get; set;} = true;
+        public bool IsManned{get; set;}
 
         public void Start()
         {
@@ -30,11 +33,27 @@ namespace GMTKJ.TowerDefense
             {
 
                 rot.Update();
-                if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+                if(Input.GetMouseButtonDown(0))
                 {
                     shooter.Fire(transform.forward);
                 }
+
+                if(Input.GetKeyDown(KeyCode.Space))
+                {
+                    IngameScene.Current.Player.gameObject.SetActive(true);
+                    IsManned = false;
+                }
             }
+        }
+
+        public void OnDeselect()
+        {
+            selectIndicator.gameObject.SetActive(false);
+        }
+
+        public void OnSelect()
+        {
+            selectIndicator.gameObject.SetActive(true);
         }
     }
 }
