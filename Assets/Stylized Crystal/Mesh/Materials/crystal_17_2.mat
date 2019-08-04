@@ -90,7 +90,7 @@ Material:
     - _Use_Neg_Y_Color: 1
     - _Use_Neg_Z_Color: 1
     - _Use_Worldspace_Gradient: 1
-    - _Worldspace_Gradient_Offset: 0.24
+    - _Worldspace_Gradient_Offset: 0
     - _Worldspace_Gradient_Scale: 0.45
     - _ZWrite: 1
     m_Colors:
@@ -104,7 +104,7 @@ Material:
     - _Neg_Z_Color: {r: 0.745283, g: 0.10898005, b: 0.5749142, a: 1}
     - _Rim_Light_Color: {r: 0.11903704, g: 0.1685025, b: 0.23584908, a: 0}
     - _Shadow_Tint: {r: 0.06674972, g: 0.177138, b: 0.1886792, a: 0}
-    - _Worldspace_Gradient_Color: {r: 0.29703632, g: 0.7075472, b: 0.33245593, a: 0}
+    - _Worldspace_Gradient_Color: {r: 0.38679248, g: 0.016420428, b: 0.12753211, a: 0}
     - _X_Color: {r: 0.735849, g: 0.10065861, b: 0.676826, a: 0}
     - _Y_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Z_Color: {r: 0, g: 0.5413911, b: 0.735849, a: 0}

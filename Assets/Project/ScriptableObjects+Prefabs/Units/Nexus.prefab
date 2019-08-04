@@ -263,8 +263,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a5baf5d611b6a488ce2b003a55c230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 6423541782350736224}
   bar: {fileID: 6683123067601085117}
   StartingHealth: 10
+  zeroHealthVal: 4
+  fullHealthVal: 0
+  propName: _Worldspace_Gradient_Scale
 --- !u!54 &5614450517888942911
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -451,6 +455,12 @@ PrefabInstance:
 --- !u!4 &6447609480450918208 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011695518034, guid: 465c505844950da499dcf096a6da4409,
+    type: 3}
+  m_PrefabInstance: {fileID: 6445978538356160018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6423541782350736224 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23000012256943474, guid: 465c505844950da499dcf096a6da4409,
     type: 3}
   m_PrefabInstance: {fileID: 6445978538356160018}
   m_PrefabAsset: {fileID: 0}
