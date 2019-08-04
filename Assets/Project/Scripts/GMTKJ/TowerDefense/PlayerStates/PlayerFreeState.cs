@@ -21,7 +21,7 @@ namespace GMTKJ.TowerDefense.PlayerStates
 
         private void StartManning(Turret current)
         {
-            ChangeState(new MoveIntoTurretState(current));
+            ExitTo(new MoveIntoTurretState(current));
         }
     }
 }

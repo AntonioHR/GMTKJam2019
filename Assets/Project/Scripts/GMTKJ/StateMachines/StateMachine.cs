@@ -11,13 +11,16 @@ namespace GMTKJ.StateMachines
         public TContext Context { get; private set; }
         public abstract TState DefaultState { get; }
 
+
+        State<TContext, TState> IStateMachine<TContext, TState>.CurrentState => CurrentState;
+
         public void Init(TContext context)
         {
             this.Context =context;
             ChangeState(DefaultState);
         }
 
-        void IStateMachine<TContext, TState>.ChangeState(TState nextState)
+        void IStateMachine<TContext, TState>.ExitTo(TState nextState)
         {
             ChangeState(nextState);
         }
@@ -37,9 +40,12 @@ namespace GMTKJ.StateMachines
     {
         private IStateMachine<TContext, TState> owner;
         protected TContext Context{get{return owner.Context;}}
-        protected void ChangeState(TState nextState)
+        protected void ExitTo(TState nextState)
         {
-            owner.ChangeState(nextState);
+            if(owner.CurrentState == this)
+            {
+                owner.ExitTo(nextState);
+            }
         }
 
 
@@ -66,7 +72,9 @@ namespace GMTKJ.StateMachines
     where TState : State<TContext, TState>
     {
         TContext Context{get;}
-        void ChangeState(TState nextState);
+        State<TContext, TState> CurrentState { get; }
+
+        void ExitTo(TState nextState);
     }
     public interface IState<TContext, TState>
     where TState : State<TContext, TState>

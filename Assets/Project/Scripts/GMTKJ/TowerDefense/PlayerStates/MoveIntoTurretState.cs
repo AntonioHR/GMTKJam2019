@@ -19,7 +19,7 @@ namespace GMTKJ.TowerDefense.PlayerStates
 
         private void OnAnimatedIntoTurret()
         {
-            ChangeState(new InsideTurretState(current));
+            ExitTo(new InsideTurretState(current));
         }
     }
 }

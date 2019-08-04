@@ -19,7 +19,7 @@ namespace GMTKJ.TowerDefense.PlayerStates
             if(PressedTurretToggle)
             {
                 turret.IsManned = false;
-                ChangeState(new LeavingTurretState(turret));
+                ExitTo(new LeavingTurretState(turret));
             }
         }
 

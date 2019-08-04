@@ -106,7 +106,7 @@ Transform:
   m_GameObject: {fileID: 5260664913153877470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4124, y: 1, z: 1}
   m_Children:
   - {fileID: 1672001819111408885}
   m_Father: {fileID: 0}
@@ -125,8 +125,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowMultipleTriggers: 1
-  vel: 30
+  vel: 10
   rb: {fileID: -148979283423051682}
+  damage: 1
 --- !u!54 &-148979283423051682
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -142,7 +143,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &7893545358301677765
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -154,5 +155,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.3, z: 1}
+  m_Size: {x: 0.3, y: 0.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

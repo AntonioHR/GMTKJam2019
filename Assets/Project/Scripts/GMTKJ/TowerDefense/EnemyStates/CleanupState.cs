@@ -1,3 +1,4 @@
+using GMTKJ.Bullets;
 using UnityEngine;
 
 namespace GMTKJ.TowerDefense.EnemyStates
@@ -8,5 +9,6 @@ namespace GMTKJ.TowerDefense.EnemyStates
         {
             GameObject.Destroy(Context.gameObject);
         }
+        public override void OnHitBy(Bullet bullet){}
     }
 }

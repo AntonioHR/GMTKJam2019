@@ -31,7 +31,7 @@ namespace GMTKJ.TowerDefense
 
         public virtual void OnNexusDead()
         {
-            ChangeState(new DeadState());
+            ExitTo(new DeadState());
         }
     }
 }

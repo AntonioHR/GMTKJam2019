@@ -19,7 +19,7 @@ namespace GMTKJ.TowerDefense.PlayerStates
 
         private void OnLeftTurret()
         {
-            ChangeState(new PlayerFreeState());
+            ExitTo(new PlayerFreeState());
         }
     }
 }

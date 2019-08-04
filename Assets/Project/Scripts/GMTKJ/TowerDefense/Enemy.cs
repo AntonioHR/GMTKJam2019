@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using GMTKJ.Bullets;
 using GMTKJ.StateMachines;
 using GMTKJ.TowerDefense.EnemyStates;
@@ -27,7 +28,6 @@ namespace GMTKJ.TowerDefense
         public void OnHitBy(Bullet bullet)
         {
             stateMachine.OnHitBy(bullet);
-            Destroy(gameObject);
         }
     }
     public class EnemyStateMachine : StateMachine<Enemy, EnemyState>
@@ -46,7 +46,16 @@ namespace GMTKJ.TowerDefense
     }
     public abstract class EnemyState : State<Enemy, EnemyState>
     {
-        public virtual void OnHitBy(Bullet bullet){}
+        public virtual void OnHitBy(Bullet bullet)
+        {
+            Context.CurrentHealth-= bullet.Damage;
+            if(Context.CurrentHealth < 0) 
+                ExitTo(new DyingState());
+            else
+            {
+                Context.transform.DOPunchPosition(bullet.Velocity.normalized * .25f, .2f, 0);
+            }
+        }
 
         public virtual void OnNearNexus(Nexus nexus){}
     }
