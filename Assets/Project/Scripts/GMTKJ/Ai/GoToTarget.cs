@@ -15,7 +15,14 @@ namespace GMTKJ.Ai
         void Start()
         {
             navMeshAgent = GetComponent<NavMeshAgent>();
-            navMeshAgent.destination = target.position;
+            if(target != null)
+                navMeshAgent.destination = target.position;
+        }
+
+        public void SetTarget(Transform newDestination)
+        {
+            navMeshAgent = GetComponent<NavMeshAgent>();
+            navMeshAgent.destination = newDestination.position;
         }
     }
 }

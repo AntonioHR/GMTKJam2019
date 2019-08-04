@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9a3deb887370ee4a8d4cb001b2bd579, type: 3}
+  m_Name: WaveSection ABC
+  m_EditorClassIdentifier: 
+  timeToSpawn: 3
+  enemyPrefabs:
+  - {fileID: 6960195469407555044, guid: 17dcde7bb786fd143ab20659456641ec, type: 3}
+  - {fileID: 4016285722165981535, guid: f50f4ea254c6c5648b21b0cffd666d74, type: 3}
+  - {fileID: 5353038227448624709, guid: 8385b4d6ba9c3984d9fe1be4189f2e24, type: 3}
