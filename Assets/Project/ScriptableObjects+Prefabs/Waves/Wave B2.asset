@@ -10,11 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75cbfe4abf709494e90aa05510ec8066, type: 3}
-  m_Name: Wave 1
+  m_Name: Wave B2
   m_EditorClassIdentifier: 
-  timeBewteenSections: 4
+  timeBewteenSections: 15
   waveSections:
-  - {fileID: 11400000, guid: 47aa38fcddc6f17478f5c962e06c6de0, type: 2}
-  - {fileID: 11400000, guid: 47085ce9f48f203438546307feb1021a, type: 2}
-  - {fileID: 11400000, guid: 47aa38fcddc6f17478f5c962e06c6de0, type: 2}
-  - {fileID: 11400000, guid: 47085ce9f48f203438546307feb1021a, type: 2}
+  - {fileID: 11400000, guid: b8a7b629775562d4ea9538c7decaa905, type: 2}
