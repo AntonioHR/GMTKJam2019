@@ -14,7 +14,11 @@ namespace GMTKJ.Ai
         [SerializeField]
         private Text currentWaveText;
 
-        IEnumerator Start()
+        public void Begin ()
+        {
+            StartCoroutine(Run());
+        }
+        IEnumerator Run()
         {
             foreach(Wave w in waves)
             {
