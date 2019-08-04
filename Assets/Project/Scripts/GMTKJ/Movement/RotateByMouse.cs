@@ -31,7 +31,7 @@ namespace GMTKJ.Movement
             var pos = cursor.MousePos;
             if(pos != null)
             {
-                Vector3 delta = cursor.MousePos.Value - transform.position;
+                Vector3 delta = transform.position - cursor.MousePos.Value;
                 if(settings.lockVertical)
                     delta.y = 0;
                 transform.rotation = baseRotation * Quaternion.LookRotation(delta);

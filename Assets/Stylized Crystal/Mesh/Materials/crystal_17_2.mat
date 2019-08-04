@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: crystal_17_2
+  m_Shader: {fileID: 4800000, guid: f7a91f75f0ad8d240b53f9ac48597caa, type: 3}
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color_Map:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 6f719c3bb48788e439c27891aa28f61f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal_Map:
+        m_Texture: {fileID: 2800000, guid: 6f719c3bb48788e439c27891aa28f61f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Rim_Light_Add_Mode: 0
+    - _Rim_Light_Power: 40
+    - _Shadow_Boost: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _Use_Neg_X_Color: 1
+    - _Use_Neg_Y_Color: 1
+    - _Use_Neg_Z_Color: 1
+    - _Use_Worldspace_Gradient: 1
+    - _Worldspace_Gradient_Offset: 0.24
+    - _Worldspace_Gradient_Scale: 0.45
+    - _ZWrite: 1
+    m_Colors:
+    - _Base_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Light_Add: {r: 0.245283, g: 0.1583541, b: 0.1076006, a: 0}
+    - _Light_Multiplier: {r: 1, g: 1, b: 1, a: 0}
+    - _Neg_X_Color: {r: 0.7172327, g: 0.007843138, b: 0.7264151, a: 0.49019608}
+    - _Neg_Y_Color: {r: 0.1254902, g: 0.43921572, b: 0.6039216, a: 0}
+    - _Neg_Z_Color: {r: 0.745283, g: 0.10898005, b: 0.5749142, a: 1}
+    - _Rim_Light_Color: {r: 0.11903704, g: 0.1685025, b: 0.23584908, a: 0}
+    - _Shadow_Tint: {r: 0.06674972, g: 0.177138, b: 0.1886792, a: 0}
+    - _Worldspace_Gradient_Color: {r: 0.29703632, g: 0.7075472, b: 0.33245593, a: 0}
+    - _X_Color: {r: 0.735849, g: 0.10065861, b: 0.676826, a: 0}
+    - _Y_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Z_Color: {r: 0, g: 0.5413911, b: 0.735849, a: 0}
