@@ -10,6 +10,7 @@ namespace GMTKJ.TowerDefense
 {
     public class Enemy : MonoBehaviour, IHittable
     {
+        public int TotalAttacks = 1;
         public int StartingHealth;
         [NonSerialized]
         public int CurrentHealth;

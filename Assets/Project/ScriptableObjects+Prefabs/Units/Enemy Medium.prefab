@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 6960195469407555044, guid: 17dcde7bb786fd143ab20659456641ec,
         type: 3}
       propertyPath: m_Name
-      value: Enemy B
+      value: Enemy Medium
       objectReference: {fileID: 0}
     - target: {fileID: 6960195469407555032, guid: 17dcde7bb786fd143ab20659456641ec,
         type: 3}
@@ -72,6 +72,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fa1efb9d72256d34aa049f95c3453412, type: 2}
+    - target: {fileID: 511806226096615934, guid: 17dcde7bb786fd143ab20659456641ec,
+        type: 3}
+      propertyPath: StartingHealth
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 511806226096615934, guid: 17dcde7bb786fd143ab20659456641ec,
+        type: 3}
+      propertyPath: TotalAttacks
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8520185869952208126, guid: 17dcde7bb786fd143ab20659456641ec,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

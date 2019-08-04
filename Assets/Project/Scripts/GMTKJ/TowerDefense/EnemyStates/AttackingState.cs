@@ -7,6 +7,7 @@ namespace GMTKJ.TowerDefense.EnemyStates
     public class AttackingState : IdleState
     {
         private Sequence tween;
+        private int currentAttacks = 0;
 
         protected override void Begin()
         {
@@ -23,6 +24,10 @@ namespace GMTKJ.TowerDefense.EnemyStates
         private void OnAttackKeyFrame()
         {
             IngameScene.Current.Nexus.HitBy(this);
+
+            currentAttacks++;
+            if (currentAttacks == Context.TotalAttacks)
+                ExitTo(new CleanupState());
         }
 
         protected override void End()
