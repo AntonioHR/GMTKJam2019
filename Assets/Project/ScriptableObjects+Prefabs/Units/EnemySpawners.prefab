@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6519389122137910854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.91, y: 0, z: 8.1}
+  m_LocalPosition: {x: 3.33, y: 0, z: 8.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6519389122575080758}
@@ -47,6 +47,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a493e7a252862e94db8690f3aaf4396c, type: 2}
   - {fileID: 11400000, guid: 4f0c7f63018b0374fbaf1d0ed79ea675, type: 2}
   - {fileID: 11400000, guid: 4087a3aff43142243b9c25e8fe7443ca, type: 2}
+  waveInitialDelay: 10
   timeBetweenWaves: 15
   currentWaveText: {fileID: 0}
 --- !u!1 &6519389122409076923
@@ -74,7 +75,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6519389122409076923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8, y: 0, z: 1.93}
+  m_LocalPosition: {x: 4.27, y: 0, z: 1.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6519389122575080758}
@@ -96,6 +97,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 868db06bb04936a40b71aa3f2715897a, type: 2}
   - {fileID: 11400000, guid: 848ef90b17b90614d9e3b8de0866faa5, type: 2}
   - {fileID: 11400000, guid: b00ee078c29f18945a48ce57fe40d997, type: 2}
+  waveInitialDelay: 30
   timeBetweenWaves: 30
   currentWaveText: {fileID: 0}
 --- !u!1 &6519389122575080757
@@ -157,7 +159,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6519389123058732320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.2, y: 0, z: 7.82}
+  m_LocalPosition: {x: -13.2, y: 0, z: 7.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6519389122575080758}
@@ -179,6 +181,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fcd24d7fa6101f2468cbc7146d2212fb, type: 2}
   - {fileID: 11400000, guid: 2e1e58ffd73db7a4693f58ce03630b33, type: 2}
   - {fileID: 11400000, guid: 65df25aba39fa3841b130148c5901063, type: 2}
+  waveInitialDelay: 20
   timeBetweenWaves: 20
   currentWaveText: {fileID: 0}
 --- !u!1 &6519389123354624209
@@ -206,7 +209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6519389123354624209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.77, y: 0, z: -3.88}
+  m_LocalPosition: {x: 3.34, y: 0, z: -4.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6519389122575080758}
@@ -228,5 +231,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6e23ac153dd21854ba44248dd3a39c0b, type: 2}
   - {fileID: 11400000, guid: 2500e4341eab7304a95e180fec722d66, type: 2}
   - {fileID: 11400000, guid: 542c55f58f89ca94ca0e6a51babb2143, type: 2}
+  waveInitialDelay: 1
   timeBetweenWaves: 10
   currentWaveText: {fileID: 0}

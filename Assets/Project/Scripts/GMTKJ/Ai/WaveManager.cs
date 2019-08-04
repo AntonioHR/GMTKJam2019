@@ -10,19 +10,28 @@ namespace GMTKJ.Ai
         [SerializeField]
         private ScriptableObject[] waves;
         [SerializeField]
+        private float waveInitialDelay = 1f;
+        [SerializeField]
         private float timeBetweenWaves = 10f;
         [SerializeField]
         private Text currentWaveText;
 
         public void Begin ()
         {
+            StartCoroutine(DelayWave());
+        }
+
+        IEnumerator DelayWave()
+        {
+            yield return new WaitForSeconds(waveInitialDelay);
             StartCoroutine(Run());
         }
+
         IEnumerator Run()
         {
-            foreach(Wave w in waves)
+            
+            foreach (Wave w in waves)
             {
-                yield return new WaitForSeconds(w.initialDelay);
                 StartCoroutine(NewWave(w));
                 if(currentWaveText != null)
                     currentWaveText.text = w.name;
