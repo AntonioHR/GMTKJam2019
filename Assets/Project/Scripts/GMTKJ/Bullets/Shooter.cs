@@ -15,10 +15,10 @@ namespace GMTKJ.Bullets
             this.folder = folder;
         }
 
-        public void Fire(Vector3 direction)
+        public void Fire(Vector3 direction, IHittable owner = null)
         {
             var bullet = GameObject.Instantiate(prefab, origin.position, Quaternion.LookRotation(direction), folder);
-            bullet.Shoot(direction);
+            bullet.Shoot(direction, owner);
         }
     }
 }
