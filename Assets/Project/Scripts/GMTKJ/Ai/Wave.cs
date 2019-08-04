@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Wave : ScriptableObject
 {
+    public float initialDelay = 0f;
     public float timeBewteenSections = 5f;
     public ScriptableObject[] waveSections;
     

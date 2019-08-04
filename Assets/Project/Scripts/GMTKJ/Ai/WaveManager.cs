@@ -18,7 +18,8 @@ namespace GMTKJ.Ai
         {
             foreach(Wave w in waves)
             {
-                StartCoroutine(NewWave(w as Wave));
+                yield return new WaitForSeconds(w.initialDelay);
+                StartCoroutine(NewWave(w));
                 if(currentWaveText != null)
                     currentWaveText.text = w.name;
                 yield return new WaitForSeconds(w.TotalTime());
