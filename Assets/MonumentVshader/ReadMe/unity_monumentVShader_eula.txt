@@ -1,0 +1,42 @@
+The contents of this package have been created by Richard Schmidbauer at http://www.visionvortex.de
+
+This package contains a set of unity shaders and is provided as is. You are allowed to use and modify the assets according to the license type as stated below.
+
+Section 1 – Definitions
+
+Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
+Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
+Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.
+Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
+Licensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.
+Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.
+Licensor means the individual(s) or entity(ies) granting rights under this license, based ont the purchased license type.
+
+Section 2 - License Types
+
+License grant Personal License
+
+The licensor is granted the following, non exclusive rights:
+Licensor may use the Licensed Material to create personal projects.
+These projects may be made accessible to the public for use, viewing and or consumption on any media existing now and in the future as long as the access to the services and products is free of charge.
+Such uses include, but are not limited to a designers portfolio, webpage or a free game (not free to play). As soon as any of the provided services are accessibly by paying fees, optional or mandatory,
+the Standard license does not apply any more.
+
+License grant Standard License
+
+In addition to the basic rights granted in the Personal License section above, the licensor is additionally granted the following, non exclusive rights:
+Licensor may use the Licensed Material to create one commercial project (up to 2,000 sales or 20,000 views). A project constitutes as commercial id either a fee is required to use or consume
+the product or the Licensor receives any form of income directly related to the consumption or use of the product.
+
+License grant Extended Commercial License
+
+In addition to the basic rights granted in the Personal License section above, the licensor is additionally granted the following, non exclusive rights:
+Licensor may use the Licensed Material to create an unlimited number of commercial projects with no limits on sales or views. A project constitutes as commercial id either a fee is required
+to use or consume the product or the Licensor receives any form of income directly related to the consumption or use of the product.
+
+Section 3 - Modification and Product
+
+Any product created with the use of the Licensed Material must not contain only the Licensed Material not must the Licended Material be the main selling point of the product. The licensed material must also not be sold
+alone or unmodified as part of a collection or compilation. The Licensed Material must not be made accessible to a third party, that did not licese the Licensed Material in any form.
+
+

@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MonumentV_Pillar_SG
+  m_Shader: {fileID: 4800000, guid: f7a91f75f0ad8d240b53f9ac48597caa, type: 3}
+  m_ShaderKeywords: _RIMLIGHTADDMODE_ON _RIM_LIGHT_ADD_MODE_ON _USENEGXCOLOR_ON _USENEGYCOLOR_ON
+    _USENEGZCOLOR_ON _USE_NEG_X_COLOR_ON _USE_NEG_Y_COLOR_ON _USE_NEG_Z_COLOR_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ColorMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color_Map:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal_Map:
+        m_Texture: {fileID: 2800000, guid: 4dc11c43963b1674f93e3bc1ead80d64, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Gloss: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _LightDirection: 11.35
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _RimLightAddMode: 1
+    - _RimLightPower: 10
+    - _RimPower: 4.05
+    - _Rim_Light_Add_Mode: 1
+    - _Rim_Light_Power: 10
+    - _ShadowBoost: 0
+    - _Shadow_Boost: 0
+    - _SmoothnessTextureChannel: 0
+    - _Space_Gradient_Offset: 0
+    - _Space_Gradient_Scale: 1
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseNegXColor: 1
+    - _UseNegYColor: 1
+    - _UseNegZColor: 1
+    - _UseWorldSpaceGradient: 0
+    - _UseXColor: 0.8970588
+    - _UseYColor: 0.8382353
+    - _UseZColor: 0.08272059
+    - _Use_Neg_X_Color: 1
+    - _Use_Neg_Y_Color: 1
+    - _Use_Neg_Z_Color: 1
+    - _Use_Worldspace_Gradient: 0
+    - _WorldSpaceGradientOffset: 0
+    - _WorldSpaceGradientScale: 1
+    - _Worldspace_Gradient_Offset: 0
+    - _Worldspace_Gradient_Scale: 1
+    - _ZWrite: 1
+    m_Colors:
+    - Color_39F084C7: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Base_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _LightAdd: {r: 0.03676468, g: 0.034587137, b: 0.032439426, a: 1}
+    - _LightMultiplier: {r: 1, g: 1, b: 1, a: 1}
+    - _Light_Add: {r: 0, g: 0, b: 0, a: 0}
+    - _Light_Multiplier: {r: 1, g: 1, b: 1, a: 0}
+    - _NegXColor: {r: 0.11483564, g: 0.17168298, b: 0.2647059, a: 1}
+    - _NegYColor: {r: 0.36764705, g: 0.1597363, b: 0, a: 1}
+    - _NegZColor: {r: 0, g: 0.21697256, b: 0.4078431, a: 1}
+    - _Neg_X_Color: {r: 0.24528301, g: 0.09680194, b: 0.042808827, a: 0}
+    - _Neg_Y_Color: {r: 0, g: 0.15294118, b: 0.40784314, a: 0}
+    - _Neg_Z_Color: {r: 0.13305448, g: 0.29218844, b: 0.4339623, a: 0}
+    - _RimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _RimLightColor: {r: 0.49264705, g: 0.8530427, b: 1, a: 1}
+    - _Rim_Light_Color: {r: 0.49411765, g: 0.85490197, b: 1, a: 0}
+    - _ShadowTint: {r: 0.0351968, g: 0.1346796, b: 0.1544118, a: 1}
+    - _Shadow_Tint: {r: 0.03529412, g: 0.13333334, b: 0.15294118, a: 0}
+    - _Space_Gradient: {r: 0.62411, g: 0.7810972, b: 0.8018868, a: 0}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _WorldSpaceGradientColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Worldspace_Gradient_Color: {r: 1, g: 0.20392157, b: 0.20392157, a: 0}
+    - _XColor: {r: 0.7352941, g: 0.4865917, b: 0.11353808, a: 1}
+    - _X_Color: {r: 0.7372549, g: 0.4862745, b: 0.11372549, a: 0}
+    - _YColor: {r: 0.7003676, g: 0.7985801, b: 0.9338235, a: 1}
+    - _Y_Color: {r: 0.7019608, g: 0.8, b: 0.93333334, a: 0}
+    - _ZColor: {r: 0.41911763, g: 0.17036748, b: 0.00924525, a: 1}
+    - _Z_Color: {r: 0.41960785, g: 0.16862746, b: 0.007843138, a: 0}
+    - _node_2737: {r: 0.8620691, g: 0, b: 1, a: 1}
+    - _node_2737_copy: {r: 0.8620691, g: 0, b: 1, a: 1}
+    - _node_2737_copy_copy: {r: 0.8620691, g: 0, b: 1, a: 1}
+    - _node_3385: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _node_5362: {r: 0.5, g: 0.5, b: 0.5, a: 1}
