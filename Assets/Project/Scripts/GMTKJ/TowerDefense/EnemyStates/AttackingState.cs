@@ -13,7 +13,7 @@ namespace GMTKJ.TowerDefense.EnemyStates
             Context.NavMeshAgent.isStopped = true;
             Context.transform.LookAt(IngameScene.Current.Nexus.transform.position);
             tween = DOTween.Sequence();
-            tween.Append(Context.transform.DORotate(Vector3.up * 360 * 2, .5f, RotateMode.LocalAxisAdd)).SetEase(Ease.InQuad);
+            tween.Append(Context.transform.DOPunchScale(Vector3.forward * 0.2f, 0.1f)).SetEase(Ease.InQuad);
             tween.AppendCallback(OnAttackKeyFrame);
             tween.AppendInterval(1);
             tween.SetLoops(-1);
