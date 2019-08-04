@@ -2,6 +2,7 @@ using System;
 using DG.Tweening;
 using GMTKJ.Ai;
 using GMTKJ.Movement;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -71,15 +72,24 @@ namespace GMTKJ.TowerDefense
         }
         public void OnNexusDead(Nexus nexus)
         {
+            StartGameOver();
+        }
+        private void StartGameOver()
+        {
             var seq = DOTween.Sequence();
             seq.Append(gameOver.DOFade(1, 1));
             seq.AppendInterval(.5f);
-            seq.AppendCallback(()=>
+            seq.AppendCallback(() =>
             {
-                SceneManager.LoadScene(0, LoadSceneMode.Single);
+                gameOver.interactable = true;
             });
 
             player.OnNexusDead();
+        }
+
+        public void Reset()
+        {
+            SceneManager.LoadScene(0, LoadSceneMode.Single);
         }
     }
 }
