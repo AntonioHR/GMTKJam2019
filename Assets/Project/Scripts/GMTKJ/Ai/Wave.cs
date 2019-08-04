@@ -17,6 +17,6 @@ public class Wave : ScriptableObject
         {
             totalTime += ws.TotalTime;
         }
-        return totalTime + timeBewteenSections;
+        return totalTime + timeBewteenSections;   
     }
 }
