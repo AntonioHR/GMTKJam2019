@@ -104,7 +104,7 @@ Material:
     - _Neg_Z_Color: {r: 0, g: 0.16342592, b: 1, a: 1}
     - _Rim_Light_Color: {r: 0.11903704, g: 0.1685025, b: 0.23584908, a: 0}
     - _Shadow_Tint: {r: 0.06674972, g: 0.177138, b: 0.1886792, a: 0}
-    - _Worldspace_Gradient_Color: {r: 0.4433962, g: 0.048104316, b: 0.1853585, a: 0}
+    - _Worldspace_Gradient_Color: {r: 0.8396226, g: 0, b: 0.2909584, a: 0}
     - _X_Color: {r: 0.10196077, g: 0.7372549, b: 0.69852525, a: 0}
     - _Y_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Z_Color: {r: 0, g: 0.5413911, b: 0.735849, a: 0}
