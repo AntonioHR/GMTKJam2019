@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal_Map:
-        m_Texture: {fileID: 2800000, guid: 6f719c3bb48788e439c27891aa28f61f, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -90,7 +90,7 @@ Material:
     - _Use_Neg_Y_Color: 1
     - _Use_Neg_Z_Color: 1
     - _Use_Worldspace_Gradient: 1
-    - _Worldspace_Gradient_Offset: 0
+    - _Worldspace_Gradient_Offset: 0.24
     - _Worldspace_Gradient_Scale: 0.45
     - _ZWrite: 1
     m_Colors:
@@ -98,13 +98,13 @@ Material:
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Light_Add: {r: 0.245283, g: 0.1583541, b: 0.1076006, a: 0}
-    - _Light_Multiplier: {r: 1, g: 1, b: 1, a: 0}
+    - _Light_Multiplier: {r: 0.078497685, g: 0.7924528, b: 0.7723069, a: 0}
     - _Neg_X_Color: {r: 0.7172327, g: 0.007843138, b: 0.7264151, a: 0.49019608}
     - _Neg_Y_Color: {r: 0.1254902, g: 0.43921572, b: 0.6039216, a: 0}
-    - _Neg_Z_Color: {r: 0.745283, g: 0.10898005, b: 0.5749142, a: 1}
+    - _Neg_Z_Color: {r: 0, g: 0.16342592, b: 1, a: 1}
     - _Rim_Light_Color: {r: 0.11903704, g: 0.1685025, b: 0.23584908, a: 0}
     - _Shadow_Tint: {r: 0.06674972, g: 0.177138, b: 0.1886792, a: 0}
-    - _Worldspace_Gradient_Color: {r: 0.38679248, g: 0.016420428, b: 0.12753211, a: 0}
-    - _X_Color: {r: 0.735849, g: 0.10065861, b: 0.676826, a: 0}
+    - _Worldspace_Gradient_Color: {r: 0.4433962, g: 0.048104316, b: 0.1853585, a: 0}
+    - _X_Color: {r: 0.10196077, g: 0.7372549, b: 0.69852525, a: 0}
     - _Y_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Z_Color: {r: 0, g: 0.5413911, b: 0.735849, a: 0}
