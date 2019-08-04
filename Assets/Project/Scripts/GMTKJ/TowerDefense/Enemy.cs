@@ -8,7 +8,7 @@ using UnityEngine.AI;
 
 namespace GMTKJ.TowerDefense
 {
-    public class Enemy : MonoBehaviour
+    public class Enemy : MonoBehaviour, IHittable
     {
         public int StartingHealth;
         [NonSerialized]

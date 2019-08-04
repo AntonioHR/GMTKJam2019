@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GMTKJ.Bullets
 {
-    public class Bullet : ObjectTrigger<Enemy>
+    public class Bullet : ObjectTrigger<IHittable>
     {
         public float speed = 20;
         [SerializeField]
@@ -21,9 +21,9 @@ namespace GMTKJ.Bullets
             Destroy(gameObject, 10);
         }
 
-        protected override void OnTriggered(Enemy enemy)
+        protected override void OnTriggered(IHittable hittable)
         {
-            enemy.OnHitBy(this);
+            hittable.OnHitBy(this);
             GameObject.Destroy(gameObject);
         }
     }
