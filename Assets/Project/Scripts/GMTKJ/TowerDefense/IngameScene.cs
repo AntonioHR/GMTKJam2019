@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using GMTKJ.Movement;
 using UnityEngine;
 
@@ -12,6 +13,8 @@ namespace GMTKJ.TowerDefense
 
         [SerializeField]
         private Transform bulletsFolder;
+        [SerializeField]
+        private CanvasGroup gameOver;
 
 
         [SerializeField]
@@ -37,6 +40,8 @@ namespace GMTKJ.TowerDefense
         }
         public void OnNexusDead(Nexus nexus)
         {
+            gameOver.DOFade(1, 1);
+
             player.OnNexusDead();
         }
     }
