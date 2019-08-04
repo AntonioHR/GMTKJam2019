@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 2203954159465036175}
   - component: {fileID: 2213472318565254151}
   - component: {fileID: 6731682576086885928}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: TurretChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,12 +430,12 @@ PrefabInstance:
       propertyPath: charController
       value: 
       objectReference: {fileID: 8027237787270184436}
-    - target: {fileID: 2235052489394233459, guid: 883c9e0826f4ce048ba8a99933ba9be4,
+    - target: {fileID: 5318230449247790332, guid: 883c9e0826f4ce048ba8a99933ba9be4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d3f0757bfaeec5b4080adec3f00725b3, type: 2}
-    - target: {fileID: 5318230449247790332, guid: 883c9e0826f4ce048ba8a99933ba9be4,
+    - target: {fileID: 2235052489394233459, guid: 883c9e0826f4ce048ba8a99933ba9be4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

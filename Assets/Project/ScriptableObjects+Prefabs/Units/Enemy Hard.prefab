@@ -72,15 +72,45 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 29ef230aa4a91fa43905ec53f291fb2f, type: 2}
+    - target: {fileID: 4016285722165981534, guid: f50f4ea254c6c5648b21b0cffd666d74,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016285722165981534, guid: f50f4ea254c6c5648b21b0cffd666d74,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016285722165981534, guid: f50f4ea254c6c5648b21b0cffd666d74,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.61
+      objectReference: {fileID: 0}
     - target: {fileID: 5778522391888874821, guid: f50f4ea254c6c5648b21b0cffd666d74,
         type: 3}
       propertyPath: StartingHealth
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5778522391888874821, guid: f50f4ea254c6c5648b21b0cffd666d74,
         type: 3}
       propertyPath: TotalAttacks
-      value: 6
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873980278362416603, guid: f50f4ea254c6c5648b21b0cffd666d74,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9453106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873980278362416603, guid: f50f4ea254c6c5648b21b0cffd666d74,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1741701
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873980278362416603, guid: f50f4ea254c6c5648b21b0cffd666d74,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.9087929
       objectReference: {fileID: 0}
     - target: {fileID: 2384345506449125445, guid: f50f4ea254c6c5648b21b0cffd666d74,
         type: 3}
