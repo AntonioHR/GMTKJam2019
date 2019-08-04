@@ -8,8 +8,6 @@ namespace GMTKJ.Ai
     public class WaveManager : MonoBehaviour
     {
         [SerializeField]
-        private GameObject enemyPrefab;
-        [SerializeField]
         private Transform target;
         [SerializeField]
         private ScriptableObject[] waves;
